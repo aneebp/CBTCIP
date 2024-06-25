@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  
+  height: 100vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url(./image/background_img.jpg) no-repeat;
+  background-position: center;   
+  background-size: cover;
+  letter-spacing: 2px;
+}
+/*  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url(./image/background_img.jpg) no-repeat;
+  background-position: center;   
+  background-size: cover;
+} */
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header form {
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+}
+form input {
+  height: 40px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+input[type="text"] {
+  font-size: 1rem;
+  color: wheat;
+  background: transparent;
+  border: 2px solid black;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+header .country {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+section .top {
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.top .name {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+.top .temp {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.icon img {
+  width: 150px;
+  height: 150px;
+}
+.top .description {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.bottom {
+  display: flex;
+  gap: 6rem;
+  margin-top: 3rem;
+}
+.bottom div {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #8f0000;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border: black solid 3px;
+  font-size: 1rem;
+}
+
+.bottom div:hover {
+  opacity: 1;
+  font-size: 1.1rem;
+}
